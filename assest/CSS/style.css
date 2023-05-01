@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin sans',sans-serif;
+}
+
+body>header{
+ 
+    background-image: url(/assest/images/banner2.jpg);
+    height: 100vh;
+    width: 100%;
+/* background: no-repeat; */
+background-size: cover;
+background-position: center;
+}
+header>nav{
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-top: 15px;
+   padding-left: 180px;
+    
+}
+nav>li{
+    display: inline-block;
+    padding: 10px 20px;
+    
+}
+nav>li>a{
+    transition: all 0.3s ease 0s;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+ 
+}
+nav>li>a:hover{
+   color: #01fffd;
+   height: 40px;
+   padding: 10.5px 20px;
+ 
+}
+header>div>a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1px 10px;
+    font-size: 25px;
+    float: right;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+header>div>a:hover{
+    background-color: #01fffd;
+    height: 30px;
+    border-radius: 10px;
+}
+header>button{
+    width: 90px;
+   height: 30px;
+   float: right;
+   margin-top: 10px;
+   background:  black;
+   border: 1px solid #ffffff;
+   border-radius: 10px;
+   /* font-weight: 50; */
+   /* font-size: 15px; */
+   color: rgb(255, 255, 255);
+}
+header>button:hover{
+    background-color: #01fffd;
+    /* color: black; */
+}
