@@ -128,6 +128,19 @@ input{
     font-size: var(--h1-font-size);
     margin-bottom: 1rem;
 }
+
+.section__title:not(.about .section__title),
+.section__discription{
+    text-align: center;
+
+}
+
+.section__discription{
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 3.75rem;
+}
+
 /* ================ HEADED AND NAV ====================== */
 
 /* Active link */
@@ -247,6 +260,32 @@ input{
 }
 
 /* ================ SERVICES ====================== */
+.services__container{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services__item{
+    background-color: var(--container-color);
+    padding: 2rem 2rem;
+    border-radius: var(--radius);
+}
+
+.services__icon{
+    color: var(--first-color);
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.services__title{
+    font-size: var(--h3-font-size);
+    font-weight: var(--wight-500);
+    margin-block: 1.25rem 1rem;
+}
+
+.services__discription{
+    font-weight: var(--wight-300);
+}
+
 
 /* ================ WORK ====================== */
 /* work hover */
