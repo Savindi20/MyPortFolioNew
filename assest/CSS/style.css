@@ -369,7 +369,7 @@ input{
 }
 
 /* ================ ASSIGNMENT ====================== */
-/* .assignment__container{
+.assignment__container{
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -418,7 +418,7 @@ input{
 
 .assignment__item:hover .assignment__data{
     transform: translateY(2rem);
-} */
+}
 
 /* ================ CONTACT ====================== */
 
