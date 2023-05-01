@@ -286,9 +286,90 @@ input{
     font-weight: var(--wight-300);
 }
 
-
 /* ================ WORK ====================== */
+.portfolio{
+    background-color: var(--container-color);
+}
+
+.portfolio__container{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio__item{
+    position: relative;
+    cursor: pointer;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.portfolio__item::after,
+.portfolio__data{
+    position: absolute;
+    transition: all 0.65s var(--transition);
+}
+
+.portfolio__item::after{
+    content: '';
+    inset: 0;
+    background: linear-gradient(180deg, transparent, var(--first-color));
+    opacity: 0;
+}
+
+.portfolio__data{
+    inset-inline: 2rem;
+    bottom: 2rem;
+    text-align: center;
+    z-index: var(--z-tooltip);
+}
+
+.portfolio__img{
+    width: 100%;
+    opacity: 0.75;
+    vertical-align: middle;
+    transition: all 1s var(--transition);
+}
+
+.portfolio__subtitle,
+.portfolio__discription{
+    color: var(--title-color);
+    opacity: 0.7;
+}
+
+.portfolio__subtitle{
+    font-size: var(--small-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.portfolio__title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--wight-600);
+    margin-bottom: 0.75rem;
+}
+
+.portfolio__discription{
+    font-weight: var(--wight-400);
+    display: none;
+}
+
 /* work hover */
+.portfolio__item:hover::after{
+    opacity: 1;
+}
+
+.portfolio__item:hover .portfolio__img{
+    transform: scale(1.1);
+}
+
+.portfolio__item:hover .portfolio__discription{
+    display: block;
+}
+
+.portfolio__item:hover .portfolio__data{
+    transform: translateY(2rem);
+}
+
+/* ================ ASSIGNMENT ====================== */
+
 
 /* ================ CONTACT ====================== */
 
