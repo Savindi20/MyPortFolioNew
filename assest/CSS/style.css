@@ -1,17 +1,270 @@
+/* ================ GOOGLE FONTS ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================ VARIABLES CSS ====================== */
+:root {
+    --header-height: 6rem;
+
+    /* ================ colours ====================== */
+    /* colour mode HSL (hue, saturation, lightness) */
+
+    --first-color: hsl(182, 100%, 64%);
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: hsl(0, 0%, 77%);
+    --body-color: hsl(0, 0%, 6%);
+    --container-color: hsl(0, 0%, 10%);
+    --border-color: hsla(0, 0%, 100%, 0.2);
+
+    /* ================ font and typography ====================== */
+    /* .5rem = 8px | 1rem =16px */
+    --body-font:'Poppins', sans-serif;
+    --second-font: 'Montserrat', sans-serif;
+
+    --big-font-size: 3.5rem;
+    --h1-font-size: 3.75rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+
+    /* ================ font weight ====================== */
+    --wight-300: 300;
+    --wight-400: 400;
+    --wight-500: 500;
+    --wight-600: 600;
+    --wight-700: 700;
+    --wight-900: 900;
+
+    /* ================ Transition ====================== */
+    --transition: cubic-benzier(0.05, 0.2, 0.1, 1);
+
+    /* ================ border-radius ====================== */
+    --radius: 0.5rem;
+
+    /* ================ z index ====================== */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* responsive typography */
+@media screen and (max-width: 992px){
+    :root{
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.5rem;
+        --normal-font-size: 1.125rem;
+        --small-font-size: 1rem;
+        --smaller-font-size: 0.875rem; 
+    }
+}
+/* ================ BASE ====================== */
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Josefin sans',sans-serif;
+    box-sizing: border-box;
 }
 
-body>header{
+input,
+textarea,
+body{
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--wight-300);
+}
+
+body{
+    background-color: var(--body-color);
+
+}
+
+h1,
+h2,
+h3{
+    color: var(--title-color);
+    font-weight: var(--wight-700);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.67em;
+}
+
+img{
+    max-width: 100%;
+}
+
+textarea,
+input{
+    background-color: none;
+    border: none;
+    outline: none;
+}
+/* ================ REUSABLE CSS CLASSES ====================== */
+.container{
+    max-width: 1260px;
+    margin-inline: auto;
+    padding-inline: 0.75rem;
+
+}
+
+.grid{
+    display: grid;
+    gap: 1.75rem;
+}
+
+.section{
+    padding-block: 8rem;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+}
+/* ================ HEADED AND NAV ====================== */
+
+/* Active link */
+
+/* change background header */
+
+/* ================ HOME ====================== */
+.home{
+    padding-block: 16rem 9rem;
+
+}
+
+.home__container{
+    grid-template-columns: 5fr 3fr;
+    align-items: center;
+}
+
+.home__subtitle{
+    font-size: var(--small-font-size);
+    font-weight: var(--wight-400);
+    letter-spacing: 0.25rem;
+    margin-bottom: 1.25rem;
+    display: block;
+}
+
+.home__title{
+    font-family: var(--second-font);
+    font-size: var(--big-font-size);
+    font-weight: var(--wight-900);
+}
+
+.home__title span{
+    color: var(--first-color);
+}
+
+.home__img{
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    border: 0.75rem solid var(--container-color);
+    margin-left: auto;
+}
+/* ================ About ====================== */
+
+.about{
+    background-color: var(--container-color);
+}
+
+.about__container{
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__img{
+    border-radius: var(--radius);
+}
+
+.about__discription{
+    margin-bottom: 2rem;
+}
+
+.tabs__btns{
+    display: flex;
+    column-gap: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.tabs__btn,
+.tabs__discription span:first-child{
+    font-weight: var(--wight-500);
+}
+
+.tabs__btn{
+    cursor: pointer;
+    color: var(--title-color);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.tabs__btn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s var(--transition);
+}
+
+.tabs__data{
+    row-gap: 1rem;
+}
+
+.tabs__discription span:last-child{
+    display: block;
+}
+
+/* Active tab */
+.tabs__btn.tab__active{
+    color: var(--first-color);
+}
+
+.tabs__btn.tab__active::after{
+    background-color: var(--first-color);
+    width: 100%;
+
+}
+
+.tabs__item[data-content]{
+    display: none;
+}
+
+.tab__active[data-content]{
+    display: block;
+}
+
+/* ================ SERVICES ====================== */
+
+/* ================ WORK ====================== */
+/* work hover */
+
+/* ================ CONTACT ====================== */
+
+/* ================ FOOTER ====================== */
+
+/* ================ SCROLL UP ====================== */
+
+
+/* body>header{
  
     background-image: url(/assest/images/banner2.jpg);
     height: 100vh;
     width: 100%;
-/* background: no-repeat; */
-background-size: cover;
-background-position: center;
+    background-size: cover;
+    background-position: center;
 }
 header>nav{
     display: flex;
@@ -34,7 +287,7 @@ nav>li>a{
  
 }
 nav>li>a:hover{
-   color: #01fffd;
+   color: #00ffff;
    height: 40px;
    padding: 10.5px 20px;
  
@@ -45,11 +298,11 @@ header>div>a{
     padding: 1px 10px;
     font-size: 25px;
     float: right;
-    margin-top: 10px;
+    margin-top: 15px;
     padding-right: 20px;
 }
 header>div>a:hover{
-    background-color: #01fffd;
+    color: #01fffd;
     height: 30px;
     border-radius: 10px;
 }
@@ -57,15 +310,12 @@ header>button{
     width: 90px;
    height: 30px;
    float: right;
-   margin-top: 10px;
+   margin-top: 15px;
    background:  black;
    border: 1px solid #ffffff;
    border-radius: 10px;
-   /* font-weight: 50; */
-   /* font-size: 15px; */
    color: rgb(255, 255, 255);
 }
 header>button:hover{
     background-color: #01fffd;
-    /* color: black; */
-}
+} */

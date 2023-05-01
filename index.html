@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- UNICONS -->
-    <link rel="stylesheet" href="">
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="">
-    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="/assest/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
@@ -16,11 +14,11 @@
     <link rel="icon" href="asset/images/Savii1234.png">
 </head>
 <body>
+    <!-- ====================  HEADER  ============================== -->
     <header>
-        <nav>
+        <!-- <nav>
             <li><a href="#Home" class="active">Home</a></li>
             <li><a href="#AboutMe">AboutMe</a></li>
-            <li><a href="#skillsTools">Skills & Tools</a></li>
             <li><a href="#Services">Service</a></li>
             <li><a href="#Projects">Project</a></li>
             <li><a href="#Assignment">Assignment</a></li>
@@ -43,25 +41,107 @@
         </div>
         <button>
             <h4>let's talk</h4>
-        </button>
+        </button> -->
     
     </header> 
-    <!-- ===== SLIDEBARA ===== -->
+   <!-- ====================  MAIN  ============================== -->
+    <main class="main">
 
-    <!-- ===== Main ===== -->
-    <main class="main"></main>
+        <!-- ====================  HOME  ============================== -->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__subtitle">Welcome to My Portfolio</span>
+                    <h1 class="home__title">
+                        Hi, I'm Savindi Dadallage 
+                        <span> Fullstack Developer.</span>
+                        based in Sri Lanka.
+                    </h1>
+                </div>
 
-    <!-- ===== FOOTER ===== -->
+                <img src="/assest/images/about.jpg" alt="" class="home__img">
+            </div>
+        </section>
 
-    <!-- ===== SCROLL UP ===== -->
+        <!-- ====================  ABOUTME  ============================== -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <img src="assest/images/Ssavii (2).jpg" alt="" class="about__img">
 
-    <!-- ===== MIXITUP FILTER ===== -->
+                <div class="about__content">
+                    <h2 class="section__title">About Me</h2>
+
+                    <p class="about__discription">
+                    Hey,I am Savindi Jayoda Dadallage and I'm 21 years old.
+                    I am currently studying to become an IT Professional in Software Engineering Institute.
+                    I hope to work as a fullstack developer in the near future.
+                    I am currently studying web developing, mobile developing and I am interested in cording, 
+                    music,traveling fitness and photography.
+                    </p>
+
+                    <div class="tabs__btns">
+                        <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
+                        <span class="tabs__btn" data-target="#education">Education & Certification</span>
+                    </div>
+
+                    <div class="tabs__content">
+                        <div class="tabs__item tab__active" data-content id="skills">
+                            <div class="tabs__data grid">
+                                <p class="tabs__discription">
+                                    <span>User experience design</span> - UI/UX 
+                                    <span>Delight the user and make it work.</span>
+                                </p>
+                                <p class="tabs__discription">
+                                    <span>Web and User Interface Design</span> - Development 
+                                    <span>Web Sites, Web experience</span>
+                                </p>
+                                <p class="tabs__discription">
+                                    <span>Stand alone Application</span> - Development 
+                                    <span>POS System</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tabs__item" data-content id="education">
+                            <div class="tabs__data grid">
+                                <p class="tabs__discription">
+                                    <span>Diploma in Computer Science</span> - IJSE
+                                    <span>2022-2024</span>
+                                </p>
+                                <p class="tabs__discription">
+                                    <span>Gold Badge in Java</span> - HackerRank 
+                                    <span>2022</span>
+                                </p>
+                                <p class="tabs__discription">
+                                    <span>Certificate Course in Java , HTML, & MYSQL</span> - SoloLearn 
+                                    <span>2023</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================  SERVICES  ============================== -->
+
+        <!-- ====================  PROJECTS  ============================== -->
+
+        <!-- ====================  ASSIGNMENTS ============================== -->
+
+        <!-- ====================  CONTACT ME  ============================== -->
+    </main>
+
+    <!-- ====================  FOOTER  ============================== -->
+
+    <!-- ====================  SCROLL UP  ============================== -->
+
+    <!-- ====================  EMAIL JS ============================== -->
     <script src=""></script>
 
-    <!-- ===== Swiper JS ===== -->
-    <script src=""></script>
+    <!-- ====================  MAIN JS ============================== -->
+    <script src="/assest/JS/main.js"></script>
 
-    <!-- ===== Main JS ===== -->
-    <script src=""></script>
 </body>
 </html>
