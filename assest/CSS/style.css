@@ -103,7 +103,7 @@ img{
 
 textarea,
 input{
-    background-color: none;
+    background-color: transparent;
     border: none;
     outline: none;
 }
@@ -129,7 +129,7 @@ input{
     margin-bottom: 1rem;
 }
 
-.section__title:not(.about .section__title),
+.section__title:not(.about .section__title, .contact .section__title),
 .section__discription{
     text-align: center;
 
@@ -139,6 +139,26 @@ input{
     max-width: 600px;
     margin-inline: auto;
     margin-bottom: 3.75rem;
+}
+
+.btn{
+    display: inline-block;
+    color: var(--title-color);
+    background-color: var(--first-color);
+    border: 2px solid var(--first-color);
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius);
+    font-size: var(--small-font-size);
+    font-weight: var(--wight-500);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s var(--transition);
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--first-color);
+    
 }
 
 /* ================ HEADED AND NAV ====================== */
@@ -389,6 +409,8 @@ input{
     width: 100%;
     vertical-align: middle;
     transition: all 1s var(--transition);
+    border: 5px solid var(--container-color);
+    border-radius: var(--radius);
 }
 
 .assignment__subtitle{
@@ -421,6 +443,47 @@ input{
 }
 
 /* ================ CONTACT ====================== */
+.contact{
+    background-color: var(--container-color);
+}
+
+.contact__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.contact__discription,
+.contact__input{
+    font-weight: var(--wight-400);
+}
+
+.contact__discription{
+    margin-bottom: 3rem;
+}
+
+.contact__discription a{
+    color: var(--title-color);
+    font-weight: var(--wight-500);
+} 
+
+.contact__form{
+    position: relative;
+}
+
+.contact__input{
+    border: 2px solid var(--border-color);
+    padding: 0.8rem 1.25rem;
+    width: 100%;
+    border-radius: var(--radius);
+    font-size: var(--smaller-font-size);
+    margin-bottom: .5rem;
+}
+
+.textarea{
+    height: 120px;
+    resize: none;
+}
 
 /* ================ FOOTER ====================== */
 
