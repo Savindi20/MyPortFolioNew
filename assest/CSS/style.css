@@ -485,7 +485,63 @@ input{
     resize: none;
 }
 
+.error__message{
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    font-size: var(--small-font-size);
+    font-weight: var(--wight-400);
+}
+
+.color-first{
+    color: var(--first-color);
+}
+
 /* ================ FOOTER ====================== */
+.footer__container{
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.footer__logo{
+    color: var(--title-color);
+    font-size: 2.5rem;
+    font-weight: var(--wight-700);
+}
+
+.footer__logo span{
+    color: var(--first-color);
+}
+
+.footer__socials{
+    display: flex;
+    justify-content: center;
+    column-gap: 0.75rem;
+}
+
+.footer__social-link{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    border: 2px solid var(--text-color);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s var(--transition);
+}
+
+.footer__social-link:hover{
+    background-color: var(--first-color);
+    border-color: var(--first-color);
+}
+
+.footer__copyright{
+    font-size: var(--small-font-size);
+    font-weight: var(--wight-400);
+    justify-self: flex-end;
+}
 
 /* ================ SCROLL UP ====================== */
 
