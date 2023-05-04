@@ -64,6 +64,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 input,
 textarea,
 body{
@@ -243,6 +247,25 @@ input{
 }
 
 /* change background header */
+.scroll-header{
+    position: fixed;
+    background-color: var(--container-color);
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
+    animation: slide-down 0.7s;
+}
+
+@keyframes slide-downs {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.scroll-header .nav{
+    height: var(--header-height);
+}
 
 /* ================ HOME ====================== */
 .home{
@@ -621,66 +644,35 @@ input{
 }
 
 /* ================ SCROLL UP ====================== */
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--title-color);
+    display: grid;
+    place-items: center;
+    z-index: var(--z-fixed);
+    transition: all 0.4s var(--transition);
+}
+
+.scrollup__icon{
+    color: var(--first-color);
+    font-size: 2.25rem;
+    line-height: 1;
+}
+
+/* show scrollup */
+.show-scroll {
+    bottom: 3rem
+}
+
+/* =============== BREAKPOINTS ======================= */
+/* For Large Devices */
 
 
-/* body>header{
- 
-    background-image: url(/assest/images/banner2.jpg);
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-header>nav{
-    display: flex;
-    align-items: center;
-    float: left;
-    margin-top: 15px;
-   padding-left: 180px;
-    
-}
-nav>li{
-    display: inline-block;
-    padding: 10px 20px;
-    
-}
-nav>li>a{
-    transition: all 0.3s ease 0s;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
- 
-}
-nav>li>a:hover{
-   color: #00ffff;
-   height: 40px;
-   padding: 10.5px 20px;
- 
-}
-header>div>a{
-    text-decoration: none;
-    color: #fff;
-    padding: 1px 10px;
-    font-size: 25px;
-    float: right;
-    margin-top: 15px;
-    padding-right: 20px;
-}
-header>div>a:hover{
-    color: #01fffd;
-    height: 30px;
-    border-radius: 10px;
-}
-header>button{
-    width: 90px;
-   height: 30px;
-   float: right;
-   margin-top: 15px;
-   background:  black;
-   border: 1px solid #ffffff;
-   border-radius: 10px;
-   color: rgb(255, 255, 255);
-}
-header>button:hover{
-    background-color: #01fffd;
-} */
+/* For Medium Devices */
+
+/* For Small Devices */
