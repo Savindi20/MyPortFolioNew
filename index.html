@@ -8,7 +8,7 @@
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="/assest/CSS/style.css">
+    <link rel="stylesheet" href="assest/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio</title>
     <!-- <meta http-equiv="refresh" content="3; ">> -->
@@ -17,34 +17,62 @@
 
 <body>
     <!-- ====================  HEADER  ============================== -->
-    <header>
-        <!-- <nav>
-            <li><a href="#Home" class="active">Home</a></li>
-            <li><a href="#AboutMe">AboutMe</a></li>
-            <li><a href="#Services">Service</a></li>
-            <li><a href="#Projects">Project</a></li>
-            <li><a href="#Assignment">Assignment</a></li>
-            <li><a href="#ContactMe">Contact</a></li>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">sa<span>vii</span></a>
+
+            <div class="nav__menu" id="nav-memu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+
+                    <li><a href="#about" class="nav__link active-link">About</a></li>
+
+                    <li><a href="#service" class="nav__link active-link">Services</a></li>
+
+                    <li><a href="#portfolio" class="nav__link active-link">Projects</a></li>
+
+                    <li><a href="#assignment" class="nav__link active-link">Assignment</a></li>
+
+                    <li><a href="#contact" class="nav__link active-link">contact</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ui uil-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__socials">
+                <a href="https://www.facebook.com/profile.php?id=100085639513076&mibextid=ZbWKwL" target="_blank"
+                    class="nav__social-link">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/savindi-dadallage-9a9212248" target="_blank"
+                    class="nav__social-link">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/Savindi20" target="_blank"
+                    class="nav__social-link">
+                    <i class="uil uil-github"></i>
+                </a>
+
+                <a href="https://instagram.com/______savii______?igshid=YmMyMTA2M2Y=" target="_blank"
+                    class="nav__social-link">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                
+                <div class="nav__btns">
+                    <a href="#contact" class="nav__link-btn btn">Let's talk</a>
+
+                    <div class="nav__toggle" id="nav__toggle">
+                        <i class="uil uil-bars"></i>
+                    </div>
+                </div>
+
+            </div>
 
         </nav>
-        <div class="socialmedia-icon">
-            <a href="https://www.linkedin.com/in/savindi-dadallage-9a9212248">
-                <i class="fa fa-linkedin-square"></i>
-            </a>
-            <a href="https://github.com/Savindi20">
-                <i class="fa fa-github"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100085639513076&mibextid=ZbWKwL">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-            <a href="https://instagram.com/______savii______?igshid=YmMyMTA2M2Y=">
-                <i class="fa fa-instagram"></i>
-            </a>
-        </div>
-        <button>
-            <h4>let's talk</h4>
-        </button> -->
-
     </header>
     <!-- ====================  MAIN  ============================== -->
     <main class="main">
@@ -61,7 +89,7 @@
                     </h1>
                 </div>
 
-                <img src="/assest/images/about.jpg" alt="" class="home__img">
+                <img src="assest/images/about.jpg" alt="" class="home__img">
             </div>
         </section>
 
@@ -401,7 +429,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- ====================  MAIN JS ============================== -->
-    <script src="/assest/JS/main.js"></script>
+    <script src="assest/JS/main.js"></script>
 
 </body>
 
