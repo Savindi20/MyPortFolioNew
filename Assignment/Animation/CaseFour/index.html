@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case4</title>
+    <style>
+        div{
+            height: 1px;
+            width: 1px;
+            border: 5px solid red;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            border-radius: 100%;
+            animation: testOne 2s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes testOne{
+            from{
+                height: 1px;
+                width: 1px;
+            }to{
+                height: 200px;
+                width: 200px;
+                opacity: 0;
+            }
+        }
+
+        body :hover{
+            height: 1px;
+            width: 1px;
+            border: 5px solid rgb(0, 132, 255);
+            border-radius: 100%;
+            animation: testTwo 2s infinite; 
+        }
+        @keyframes testTwo{
+            from{
+                height: 1px;
+                width: 1px;
+            }to{
+                height: 50px;
+                width: 50px;
+                opacity: 0;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div></div>
 </body>
 </html>
