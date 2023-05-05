@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case3</title>
+    <style>
+        section {
+            width: 100px;
+            height: 200px;
+            border-radius: 10px;
+            background: red;
+            position: relative;
+            left: 0;
+            animation: testOne;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes testOne {
+
+            0% {
+
+                background: rgb(0, 60, 255);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            25% {
+
+                background: yellow;
+                transform: rotate(90deg);
+                top: 0;
+                bottom: 0;
+                right: 0px;
+                left: 300px;
+            }
+
+            50% {
+
+                background: rgb(255, 0, 0);
+                transform: rotate(180deg);
+                top: 300px;
+                bottom: 0;
+                left: 300px;
+                right: 0;
+            }
+
+            75% {
+
+                background: rgb(255, 0, 170);
+                transform: rotate(270deg);
+                top: 300px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+            }
+
+            100% {
+
+                background: rgb(255, 145, 0);
+                transform: rotate(360deg);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <section>
+
+    </section>
+
 </body>
+
 </html>
