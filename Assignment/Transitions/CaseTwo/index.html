@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cse2</title>
+    <style>
+        body{
+            background-color: rgb(82, 82, 255);
+        }
+        section>div{
+            position: absolute;
+            background-color: gray;
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            border: 20px solid white;
+            border-top: 20px solid red;
+            /* border-bottom: 20px solid red;
+            border-left: 20px solid greenyellow;
+            border-right: 20px solid greenyellow; */
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>div>h1{
+            width: max-content;
+            max-height: max-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: white;
+        }
+        div:hover{
+            transform: rotate(360deg);
+            transition: all 3s;
+        }
+        div:hover>h1{
+            transform: rotate(-360deg);
+            transition: all 3s;
+
+        
+        }
+
+    </style>
 </head>
 <body>
-    
+    <section>
+        <div>
+            <h1>RWAD</h1>
+        </div>
+    </section>
 </body>
 </html>
