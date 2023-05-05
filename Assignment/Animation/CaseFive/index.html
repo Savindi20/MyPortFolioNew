@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case5</title>
+
+    <style>
+        body>main {
+            width: 900px;
+            height: 450px;
+            position: absolute;
+            box-shadow: 1px 2px 2px 2px black;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+
+
+        }
+
+        body>main>section {
+            height: 100%;
+            width: 500%;
+            display: flex;
+            animation-name: img-slider;
+            background-position: center;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+
+        }
+
+        body>main>section>div {
+            height: 100%;
+            width: 500%;
+
+        }
+
+        body>main>section>div:nth-child(1) {
+            background: url("assest/img1.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body>main>section>div:nth-child(2) {
+            background-image: url("assest/img2.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body>main>section>div:nth-child(3) {
+            background-image: url("assest/img3.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        body>main>section>div:nth-child(4) {
+            background-image: url("assest/img4.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        @keyframes img-slider {
+            0% ,20%{
+                transform: translateX(0);
+            }
+
+            25% ,40% {
+                transform: translateX(-25%);
+            }
+
+            50%,70% {
+                transform: translateX(-50%);
+            }
+
+            80%,100% {
+                transform: translateX(-80%);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    
+    <main>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </section>
+    </main>
 </body>
+
 </html>
