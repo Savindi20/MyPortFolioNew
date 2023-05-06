@@ -509,7 +509,7 @@ input{
     width: 100%;
     vertical-align: middle;
     transition: all 1s var(--transition);
-    border: 5px solid var(--container-color);
+    border: 5px solid var(--border-color);
     border-radius: var(--radius);
     height: 200px;
     width: 400px;
