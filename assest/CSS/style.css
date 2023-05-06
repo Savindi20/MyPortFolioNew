@@ -490,7 +490,7 @@ input{
 
 /* ================ ASSIGNMENT ====================== */
 .assignment__container{
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .assignment__item{
@@ -505,12 +505,16 @@ input{
 }
 
 .assignment__img{
-    opacity: 0.75;
+    /* opacity: 0.75; */
     width: 100%;
     vertical-align: middle;
     transition: all 1s var(--transition);
     border: 5px solid var(--container-color);
     border-radius: var(--radius);
+    height: 200px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
 }
 
 .assignment__subtitle{
@@ -531,7 +535,7 @@ input{
 
 .assignment__item:hover .assignment__img{
     transform: scale(1.1);
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .assignment__item:hover{
