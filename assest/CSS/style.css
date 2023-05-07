@@ -184,7 +184,7 @@ input{
     height: calc(var(--header-height) + 1.5rem);
     align-items: center;
     justify-content: space-between;
-    column-gap: 3.5rem;
+    column-gap: 3rem;
 }
 
 .nav__logo{
@@ -198,7 +198,7 @@ input{
 }
 
 .nav__list{
-    column-gap: 2rem;
+    column-gap: 1.5rem;
 }
 
 .nav__link,
@@ -297,8 +297,8 @@ input{
 }
 
 .home__img{
-    width: 420px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     border: 0.75rem solid var(--container-color);
     margin-left: auto;
@@ -388,6 +388,10 @@ input{
     background-color: var(--container-color);
     padding: 2rem 2rem;
     border-radius: var(--radius);
+}
+
+.services__item:hover{
+    border: 1px solid var(--first-color);
 }
 
 .services__icon{
@@ -675,11 +679,74 @@ input{
 
 /* =============== BREAKPOINTS ======================= */
 /* For Large Devices */
-@media screen and (max-width: 1440px) and (min-width:1024px) {
-    
-}
 @media screen and (max-width: 1024px) and (min-width:768px){
+    .container{
+        max-width: 900px;
+    }
+
+    .nav__btns{
+        display: none;
+    }
+
+    .home{
+        padding-top: 11rem;
+    }
+
+    .home__container,
+    .about__container{
+        grid-template-columns: 1fr;
+    }
+
+    .home__container{
+        row-gap: 2rem;
+    }
+
+    .home__content{
+        order: 1;
+    }
+
+    .home__img,
+    .about__img{
+        margin-inline: auto;
+    }
+
+    .home__img{
+        border: 0.5rem solid var(--container-color);
+        width: 380px;
+        height: 380px;
+    }
+
+    .about__container{
+        row-gap: 2.5rem;
+    }
+
+    .about__img{
+        height: 450px;
+        width: 450px;
+    }
+
+    .services__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
     
+    .portfolio__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .assignment__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact__container{
+        column-gap: 2rem;
+    }
+
+    .contact__img{
+        padding-top: 3rem;
+        width: 450px;
+        height: 450px;
+    }
+
 }
 
 /* For Medium Devices */
