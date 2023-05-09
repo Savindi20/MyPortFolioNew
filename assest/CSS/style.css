@@ -876,6 +876,14 @@ input{
         order: 1;
     }
 
+    .contact__img{
+        height: 400px;
+        width: 400px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     .contact__discription{
         margin-bottom: 2rem;
     }
