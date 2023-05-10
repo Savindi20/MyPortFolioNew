@@ -120,6 +120,10 @@ input{
 
 }
 
+/* .nav{
+    display: block;
+} */
+
 .grid{
     display: grid;
     gap: 1.75rem;
@@ -332,6 +336,7 @@ input{
 
 .about{
     background-color: var(--container-color);
+    
 }
 
 .about__container{
@@ -526,11 +531,13 @@ input{
     position: relative;
     cursor: pointer;
     border-radius: var(--radius);
+    
 }
 
 .assignment__data{
     text-align: center;
     z-index: var(--z-tooltip);
+    
 }
 
 .assignment__img{
@@ -964,5 +971,18 @@ input{
 }
 
 @media screen and (max-width: 320px){
+    .home__img{
+        height: 240px;
+        width: 240px;
+    }
+
+    .about__img{
+        height: 220px;
+        width: 220px;
+    }
+
+    .assignment__container{
+        grid-template-columns: 1fr;
+    }
     
 }
