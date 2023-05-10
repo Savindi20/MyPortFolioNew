@@ -921,8 +921,8 @@ input{
     }
 
     .home__img{
-        height: 245px;
-        width: 245px;
+        height: 260px;
+        width: 260px;
     }
 
     .about__img{
@@ -948,7 +948,19 @@ input{
 }
 
 @media screen and (max-width: 375px){
-    
+    .home__img{
+        height: 250px;
+        width: 250px;
+    }
+   
+    .tabs__discription span:last-child{
+        display: inline;
+    }
+
+    .portfolio__data{
+        inset-inline: 1rem;
+        bottom: 1rem;
+    }
 }
 
 @media screen and (max-width: 320px){
