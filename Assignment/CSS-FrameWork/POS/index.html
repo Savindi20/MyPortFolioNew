@@ -9,21 +9,24 @@
         <!-- CSS -->
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Wholesale Store</title>
+        <title>Flower Store</title>
         <!-- <meta http-equiv="refresh" content="3; ">> -->
         <link rel="icon" href="assest/store.png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+          </style>
     </head>
     
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow custom-navbar bg-body-tertiary">
+            <div class="container-fluid" style="background-color: #ffc7e3;">
+                <img src="assest/icon1.png" alt="Flower Store" class="img-responsive custom-logo" style="height: 85px; width: 85px; border: 2px solid rgb(182, 182, 182); border-radius: 50%;">
+              <a class="navbar-brand" style="color: #d3498e; font-weight: 800; font-size: 35px; font-family: 'Playfair Display', serif;" href="#">Flower Store</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
               </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <img src="assest/store.png" alt="">
-                <a class="navbar-brand" href="#">Wholesale Store</a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -43,12 +46,33 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <button type="button" class="btn btn-outline-light" style="background-color: #e9529e;">Search</button>
                 </form>
               </div>
             </div>
           </nav>
     </header>
+     <!-- ====================  MAIN  ============================== -->
+     <main>
+
+     <!-- ====================  HOME  ============================== -->
+     <section class="home" id="Home">
+    </section>
+
+    <!-- ====================  CUSTOMER  ============================== -->
+    <section class="Customer" id="Customer">
+    </section>
+
+    <!-- ====================  ITEM  ============================== -->
+    <section class="Item" id="Item">
+    </section>
+
+    <!-- ====================  ORDER  ============================== -->
+    <section class="Order" id="Order">
+    </section>
     
+    </main>
+
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
