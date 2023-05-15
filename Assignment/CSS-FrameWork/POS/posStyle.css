@@ -2,7 +2,7 @@
 /* ==========SCROLL BAR================== */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 13px;
 }
 
 /* Track */
@@ -13,13 +13,14 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--first-color);
-    border-radius: 13px;
+    background: #d3498e;
+    border-radius: 15px;
+
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--text-color);
+    background: #d3498e;
     /* border: 1px solid var(--first-color);  */
 }
 
@@ -45,8 +46,63 @@ h5{
 }
 
 .nav-link{
-    color: #94004a;
-    font-weight: 400;
-    font-size: 25px;
+    color: #8b0548;
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 
+/* ==================== CUSTOMER ============================== */
+.Customer,
+.Item,
+.Order{
+    padding-top: 130px;
+    padding-left: 30px;
+}
+
+
+.Customer .card-img{
+    width: 13%;
+    height: 80px;
+}
+.Customer .card{
+    border-color: white;
+}
+.Customer .card-title{
+    padding-left: 20px;
+    color: #ff80c0;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* ==================== ITEM ============================== */
+.Item .card-img{
+    width: 13%;
+    height: 80px;
+}
+.Item .card{
+    border-color: white;
+}
+.Item .card-title{
+    padding-left: 60px;
+    color: #ff80c0;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ==================== ORDER ============================== */
+.Order .card-img{
+    width: 13%;
+    height: 80px;
+}
+.Order .card{
+    border-color: white;
+}
+.Order .card-title{
+    padding-left: 50px;
+    color: #ff80c0;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
