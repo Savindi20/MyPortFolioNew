@@ -2,7 +2,7 @@
 /* ==========SCROLL BAR================== */
 /* width */
 ::-webkit-scrollbar {
-    width: 13px;
+    width: 10px;
 }
 
 /* Track */
@@ -48,30 +48,30 @@ h5{
 .nav-link{
     color: #8b0548;
     font-weight: 600;
-    font-size: 30px;
-    padding-bottom: 20px;
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 /* ==================== CUSTOMER ============================== */
 .Customer,
 .Item,
 .Order{
-    padding-top: 130px;
+    padding-top: 100px;
     padding-left: 30px;
 }
 
 
 .Customer .card-img{
-    width: 250px;
-    height: 80px;
+    width: 150px;
+    height: 60px;
 }
 .Customer .card{
     border-color: white;
 }
 .Customer .card-title{
-    padding-left: 20px;
+    padding-left: 10px;
     color: #ff80c0;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -82,12 +82,12 @@ section{
     overflow-x: hidden;
  }
  .container{
-    padding-top: 120px;
+    padding-top: 100px;
    
 
   }
   .col{
-    height: 280px;
+    height: 240px;
     width: 200px;
     background-color:whitesmoke;
    margin: 50px;
@@ -95,7 +95,7 @@ section{
   }
   .col img{
     margin: 30px;
-    height: 120px;
+    height: 100px;
     width: 120px;
   }
 
@@ -103,38 +103,38 @@ section{
   /* customer form */
   .col-10{
     
-    margin: 55px;
+    margin: 5px;
 }
 
 
 /* ==================== ITEM ============================== */
 .Item .card-img{
-    width: 13%;
-    height: 80px;
+    width: 150px;
+    height: 60px;
 }
 .Item .card{
     border-color: white;
 }
 .Item .card-title{
-    padding-left: 60px;
+    padding-left: 25px;
     color: #ff80c0;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* ==================== ORDER ============================== */
 .Order .card-img{
-    width: 13%;
-    height: 80px;
+    width: 150px;
+    height: 60px;
 }
 .Order .card{
     border-color: white;
 }
 .Order .card-title{
-    padding-left: 50px;
+    padding-left: 20px;
     color: #ff80c0;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
