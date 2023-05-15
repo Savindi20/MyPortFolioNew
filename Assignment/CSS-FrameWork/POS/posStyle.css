@@ -62,7 +62,7 @@ h5{
 
 
 .Customer .card-img{
-    width: 13%;
+    width: 250px;
     height: 80px;
 }
 .Customer .card{
@@ -75,6 +75,38 @@ h5{
     font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+section{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+ }
+ .container{
+    padding-top: 120px;
+   
+
+  }
+  .col{
+    height: 280px;
+    width: 200px;
+    background-color:whitesmoke;
+   margin: 50px;
+   border-radius: 30px;
+  }
+  .col img{
+    margin: 30px;
+    height: 120px;
+    width: 120px;
+  }
+
+  
+  /* customer form */
+  .col-10{
+    
+    margin: 55px;
+}
+
+
 /* ==================== ITEM ============================== */
 .Item .card-img{
     width: 13%;

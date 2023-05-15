@@ -66,6 +66,117 @@
                 </div>
             </div>
 
+            <div class="row justify-content-around" style="height: max-content; padding-top: 40px;">
+                <div style="background-color: #ffe5f2; height: 150px; width: 650px;">
+                    <h4 class="text-center text-light" style="background-color: #a70053; height: fit-content;">Search
+                        Customer</h4>
+                    <form>
+                        <div class="mb-3 ms-3 me-3">
+                            <input class="form-control" id="custId" placeholder="Input Customer ID" type="text">
+                        </div>
+                        <button class="btn btn-primary" type="submit">Search</button>
+                        <button class="btn btn-danger" type="button">Delete</button>
+                        <button class="btn btn-warning" type="reset">Clear</button>
+
+                    </form>
+                </div>
+
+                <!-- buttons -->
+                <div class="col-10 col-md-5 col-lg-5">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add Customer
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="background-color: #ffe1f0;">
+                                <div class="modal-header" style="background-color: #a70053;">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add New
+                                        Customer</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="customerID" class="form-label">Customer ID:</label>
+                                            <input type="text" class="form-control" id="exampleInputID">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customerName" class="form-label">Customer Name</label>
+                                            <input type="text" class="form-control" id="exampleInputName:">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customerAddress" class="form-label">Customer Address</label>
+                                            <input type="text" class="form-control" id="exampleInputAddress:">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customerSalary" class="form-label">Customer Salary</label>
+                                            <input type="int" class="form-control" id="exampleInputSalary:">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger">Save</button>
+                                    <button type="button" class="btn btn-warning"
+                                        >Renew</button>
+                                    <button type="button" class="btn btn-info"data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-warning">Load All Customer</button>
+                    <button type="button" class="btn btn-success">Update Customer</button>
+
+                </div>
+            </div>
+
+            <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+                <div class="col-10">
+
+                    <div class="customeTableDiv">
+                        <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                            <thead class="text-light text-center"
+                                style="background-color: #a70053; height: fit-content;">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Address</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody id="customerTable" style="background-color: #ffc7e3;">
+                                <tr>
+                                    <td>C001</td>
+                                    <td>Dineth</td>
+                                    <td>Hikkaduwa</td>
+                                    <td>100000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>C002</td>
+                                    <td>Savii</td>
+                                    <td>Matara</td>
+                                    <td>100000</td>
+                                </tr>
+
+                                <tr>
+                                    <td>C003</td>
+                                    <td>Sewmi</td>
+                                    <td>Galle</td>
+                                    <td>100000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+
 
         </section>
     </section>
