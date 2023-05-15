@@ -572,7 +572,8 @@ input{
 }
 
 .assignment__item:hover .assignment__img{
-    transform: scale(1.1);
+    border: 5px solid var(--first-color);
+    transform: scale(0.9);
     /* opacity: 1; */
 }
 
