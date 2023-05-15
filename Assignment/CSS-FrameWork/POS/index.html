@@ -7,7 +7,8 @@
         <!-- UNICONS -->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <!-- CSS -->
-        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="posStyle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Flower Store</title>
         <!-- <meta http-equiv="refresh" content="3; ">> -->
@@ -18,16 +19,17 @@
     </head>
     
 <body>
-    <header>
+    <section class="Home" id="Home">
+
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow custom-navbar bg-body-tertiary">
-            <div class="container-fluid" style="background-color: #ffc7e3;">
-                <img src="assest/icon1.png" alt="Flower Store" class="img-responsive custom-logo" style="height: 85px; width: 85px; border: 2px solid rgb(182, 182, 182); border-radius: 50%;">
+            <div class="container-fluid" style="background-color: #ffc7e3; height: 100px;">
+                <img src="assest/icon1.png" alt="Flower Store" class="img-responsive custom-logo" style="height: 85px; width: 85px; border: 2px solid rgb(182, 182, 182); border-radius: 50%; margin: 10px;">
               <a class="navbar-brand" style="color: #d3498e; font-weight: 800; font-size: 35px; font-family: 'Playfair Display', serif;" href="#">Flower Store</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span> 
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #ffc7e3; margin: 30px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: 20px;">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
@@ -51,28 +53,66 @@
               </div>
             </div>
           </nav>
-    </header>
+
+
+
+
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assest/home.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Your Flower Needs</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assest/home1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Your Flower Needs</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assest/home2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Your Flower Needs</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          </section>
+   
      <!-- ====================  MAIN  ============================== -->
-     <main>
+  
 
      <!-- ====================  HOME  ============================== -->
-     <section class="home" id="Home">
-    </section>
-
+     
+      
     <!-- ====================  CUSTOMER  ============================== -->
-    <section class="Customer" id="Customer">
-    </section>
+    <!-- <section class="Customer" id="Customer">
+    </section> -->
 
     <!-- ====================  ITEM  ============================== -->
-    <section class="Item" id="Item">
-    </section>
+    <!-- <section class="Item" id="Item">
+    </section> -->
 
     <!-- ====================  ORDER  ============================== -->
-    <section class="Order" id="Order">
-    </section>
+    <!-- <section class="Order" id="Order">
+    </section> -->
     
-    </main>
 
-    <script src="../js/bootstrap.bundle.js"></script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
