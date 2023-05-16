@@ -1,4 +1,3 @@
-
 /* ==========SCROLL BAR================== */
 /* width */
 ::-webkit-scrollbar {
@@ -26,26 +25,26 @@
 
 /* ================= HOME =============================== */
 
-.carousel-item img{ 
+.carousel-item img {
     display: flex;
     justify-content: center;
     object-fit: cover;
     height: 100vh;
-  
-    
+
+
 }
 
-section{
+section {
     height: 100vh;
 }
 
-h5{
+h5 {
     color: #d3498e;
     font-size: 30px;
     font-weight: 900;
 }
 
-.nav-link{
+.nav-link {
     color: #8b0548;
     font-weight: 600;
     font-size: 20px;
@@ -55,20 +54,22 @@ h5{
 /* ==================== CUSTOMER ============================== */
 .Customer,
 .Item,
-.Order{
+.Order {
     padding-top: 100px;
     padding-left: 30px;
 }
 
 
-.Customer .card-img{
+.Customer .card-img {
     width: 150px;
     height: 60px;
 }
-.Customer .card{
+
+.Customer .card {
     border-color: white;
 }
-.Customer .card-title{
+
+.Customer .card-title {
     padding-left: 10px;
     color: #ff80c0;
     font-size: 25px;
@@ -76,46 +77,51 @@ h5{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-section{
+section {
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
- }
- .container{
-    padding-top: 100px;
-   
+}
 
-  }
-  .col{
+.Customer .container {
+    padding-top: 100px;
+
+
+}
+
+.Customer .col {
     height: 240px;
     width: 200px;
-    background-color:whitesmoke;
-   margin: 50px;
-   border-radius: 30px;
-  }
-  .col img{
+    background-color: whitesmoke;
+    margin: 50px;
+    border-radius: 30px;
+}
+
+.Customer .col img {
     margin: 30px;
     height: 100px;
     width: 120px;
-  }
+}
 
-  
-  /* customer form */
-  .col-10{
-    
+
+/* customer form */
+.Customer .col-10 {
+
     margin: 5px;
 }
 
 
 /* ==================== ITEM ============================== */
-.Item .card-img{
+.Item .card-img {
     width: 150px;
     height: 60px;
 }
-.Item .card{
+
+.Item .card {
     border-color: white;
 }
-.Item .card-title{
+
+.Item .card-title {
     padding-left: 25px;
     color: #ff80c0;
     font-size: 25px;
@@ -123,18 +129,95 @@ section{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.Item .container {
+    padding-top: 100px;
+
+
+}
+
+.Item .col {
+    height: 240px;
+    width: 200px;
+    background-color: whitesmoke;
+    margin: 50px;
+    border-radius: 30px;
+}
+
+.Item .col img {
+    margin: 30px;
+    height: 100px;
+    width: 120px;
+}
+
+
+/* customer form */
+.Item .col-10 {
+
+    margin: 5px;
+}
+
 /* ==================== ORDER ============================== */
-.Order .card-img{
+.Order .card-img {
     width: 150px;
     height: 60px;
 }
-.Order .card{
+
+.Order .card {
     border-color: white;
 }
-.Order .card-title{
+
+.Order .card-title {
     padding-left: 20px;
     color: #ff80c0;
     font-size: 25px;
     font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.container{
+    margin-top: 10px;
+}
+.Order .col{
+    width: 30%;
+    margin: 5px;
+    flex-wrap: nowrap;
+    flex: 1 0 0%;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.275rem 0.75rem;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.mt-lg-5 {
+    margin-top: 1rem!important;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-grid{
+    margin: 5px;
+}
+
+.col-4{
+    margin-top: 20px;
+}
+
