@@ -46,8 +46,8 @@ h5 {
 
 .nav-link {
     color: #8b0548;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 15px;
     padding-bottom: 10px;
 }
 
@@ -55,7 +55,7 @@ h5 {
 .Customer,
 .Item,
 .Order {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 30px;
 }
 
