@@ -29,8 +29,8 @@
                 style="color: #ff80c0; font-weight: 600; font-size: 30px; font-family: 'Playfair Display', serif;"
                 href="#">Flower Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent"
@@ -61,7 +61,7 @@
     <!-- ====================  HOME  ============================== -->
     <section class="Home" id="hme-form">
 
-       
+
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -509,28 +509,36 @@
 
 
     <script>
-        document.getElementById("HomeForm").addEventListener("click",function() {
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("hme-form").style.display = 'inline-block';
+            document.getElementById("cus-form").style.display = 'none';
+            document.getElementById("itm-form").style.display = 'none';
+            document.getElementById("odr-form").style.display = 'none';
+        });
+        document.getElementById("HomeForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'inline-block';
             document.getElementById("cus-form").style.display = 'none';
             document.getElementById("itm-form").style.display = 'none';
             document.getElementById("odr-form").style.display = 'none';
 
         });
-        document.getElementById("CustomerForm").addEventListener("click",function() {
+            
+
+        document.getElementById("CustomerForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'none';
             document.getElementById("cus-form").style.display = 'inline-block';
             document.getElementById("itm-form").style.display = 'none';
             document.getElementById("odr-form").style.display = 'none';
 
         });
-        document.getElementById("ItemForm").addEventListener("click",function() {
+        document.getElementById("ItemForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'none';
             document.getElementById("cus-form").style.display = 'none';
             document.getElementById("itm-form").style.display = 'inline-block';
             document.getElementById("odr-form").style.display = 'none';
 
         });
-        document.getElementById("OrderForm").addEventListener("click",function() {
+        document.getElementById("OrderForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'none';
             document.getElementById("cus-form").style.display = 'none';
             document.getElementById("itm-form").style.display = 'none';
