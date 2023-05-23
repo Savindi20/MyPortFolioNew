@@ -362,68 +362,86 @@
 
         <div class="container text-center">
             <div class="row">
-                <div class="col col-1" style="background-color: #f0f0f0;">
+                <div class="col col-1" style="background-color: #f0f0f0; text-align: justify;">
 
-                    <h4 class="text-center p-2 text-light" style="background-color: #fd9acb;">
-                        Invoice Details</h4>
+                    <h4 class="text-center p-2 text-light" style="background-color: #fd9acb;">Customer Details</h4>
 
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col">
-                                <label for="orderID" class="form-label">Order ID:</label>
-                                <input type="text" class="form-control" id="exampleInputOrderID">
-                            </div>
-                            <div class="col">
-                                <label for="date" class="form-label">Date:</label>
-                                <input type="date" class="form-control" id="exampleInputdate">
-                            </div>
-                        </div>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <label for="orderID" class="form-label">Customer:</label>
+                        <input type="number" class="form-control" id="exampleInputID" style="width: 100px; height: 30px;">
+                          <!-- buttons -->
+            <div class="col-0 col-md-0 col-lg-10">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#customerchangeforme">
+                    Add Customer
+                </button>
 
-                        <div class="row">
-                            <div class="col">
-                                <label for="customerID" class="form-label">C-ID:</label>
-                                <input type="text" class="form-control" id="exampleInputCustomerID">
+                <!-- Modal -->
+                <div class="modal fade" id="customerchangeforme" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background-color: #f0f0f0;">
+                            <div class="modal-header" style="background-color: #ffb6da;">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add New
+                                    Customer</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                            <div class="col">
-                                <label for="name" class="form-label">C-Name:</label>
-                                <input type="text" class="form-control" id="exampleInputCustomerName">
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="customerID" class="form-label">Customer ID:</label>
+                                        <input type="text" class="form-control" id="exampleInputID">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="customerName" class="form-label">Customer Name:</label>
+                                        <input type="text" class="form-control" id="exampleInputName:">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="customerAddress" class="form-label">Customer Address:</label>
+                                        <input type="text" class="form-control" id="exampleInputAddress:">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="customerSalary" class="form-label">Customer Salary:</label>
+                                        <input type="number" class="form-control" id="exampleInputSalary:">
+                                    </div>
+                                </form>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <label for="salary" class="form-label">Salary:</label>
-                                <input type="number" class="form-control" id="exampleInputSalary">
-                            </div>
-                            <div class="col">
-                                <label for="address" class="form-label">Address:</label>
-                                <input type="text" class="form-control" id="exampleInputAddress">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger">Save</button>
+                                <button type="button" class="btn btn-warning">Renew</button>
+                                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </div>
+                    </div>
+
+                    <label for="customerID" class="form-label">Address:</label>
+                    <input type="text" class="form-control" id="exampleInputCustomerID">
+
+                    <label for="name" class="form-label">Phone No:</label>
+                    <input type="text" class="form-control" id="exampleInputCustomerName">
+
+                    <label for="salary" class="form-label">Credit Limit:</label>
+                    <input type="number" class="form-control" id="exampleInputSalary">
+
 
                 </div>
-                <div class="col col-2" style="background-color: #f0f0f0;">
+                <div class="col col-2" style="background-color: #f0f0f0; text-align: justify;">
 
                     <h4 class="text-center p-2 text-light" style="background-color: #fd9acb;">Item Select</h4>
                     <div class="container text-center">
-                        <div class="row">
-                            <div class="col">
-                                <label for="item" class="form-label">Item:</label>
-                                <input type="text" class="form-control" id="exampleInputitem">
-                            </div>
-                            <div class="col">
-                                <label for="itemCode" class="form-label">Item Code:</label>
-                                <input type="text" class="form-control" id="exampleInputitemCode">
-                            </div>
+
+                        <div class="d-grid gap-2 d-md-flex">
+                            <label for="orderID" class="form-label">Item:</label>
+                            <input type="number" class="form-control" id="exampleInputID" style="height: 25px;">
                         </div>
 
                         <div class="container text-center">
                             <div class="row">
-                                <div class="col">
-                                    <label for="itemName" class="form-label">IName:</label>
-                                    <input type="text" class="form-control" id="exampleInputitemName">
-                                </div>
                                 <div class="col-md-auto">
                                     <label for="Price" class="form-label">Price:</label>
                                     <input type="number" class="form-control" id="exampleInputitemPrice">
@@ -435,73 +453,94 @@
                             </div>
                         </div>
 
-                        <label for="orderqty" class="form-label">Order Quantity:</label>
-                        <input type="number" class="form-control" id="exampleInpunumber">
+                        <div class="container text-center">
+                            <div class="row align-items-center">
+                                <div class="col" style="background-color: #dbdbdb;">
+                                    <h6>Order Item</h6>
+                                </div>
 
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-danger" type="button">Add Item</button>
+                                <label for="orderqty" class="form-label">Order Quantity:</label>
+                                <input type="text" class="form-control" id="exampleInputID">
+
+                                <label for="orderqty" class="form-label">Creadit Limit:</label>
+                                <input type="text" class="form-control" id="exampleInputID">
+
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="button" class="btn btn-danger">Place Order</button>
+                                  </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col" style="background-color: #fddeed">
+                <div class="col col-3" style="background-color: #f0f0f0; text-align: justify;">
 
-                    <h4 class="text-center" style="font-size: 20px;">Total : 20000RS/=</h4>
-                    <h4 class="text-center" style="font-size: 20px; color: #d3498e;">Sub Total : 19500RS/=</h4>
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col">
-                                <label for="item" class="form-label">Cash:</label>
-                                <input type="text" class="form-control" id="exampleInputitem">
-                            </div>
-                            <div class="col">
-                                <label for="itemCode" class="form-label">Discount:</label>
-                                <input type="text" class="form-control" id="exampleInputitemCode">
-                            </div>
-                        </div>
-                        <label for="itemName" class="form-label">Balance:</label>
-                        <input type="text" class="form-control" id="exampleInputitemName">
+                    <h4 class="text-center p-2 text-light" style="background-color: #fd9acb;">
+                        Invoice Details</h4>
 
-                        <div class="d-grid gap-2 col-4 mx-auto">
-                            <button class="btn btn-success" type="button">Button</button>
-                        </div>
+                    <label for="orderID" class="form-label">Order ID:</label>
+                    <input type="text" class="form-control" id="exampleInputOrderID">
+                    <label for="date" class="form-label">Date:</label>
+                    <input type="date" class="form-control" id="exampleInputdate">
 
-                    </div>
-                </div>
-
-
-
-                <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
-                    <div class="col-10">
-
-                        <div class="customeTableDiv">
-                            <table class="table bg-light table-bordered w-100 h-100 table-hover">
-                                <thead class="text-light text-center"
-                                    style="background-color: #ffb6da; height: fit-content;">
-                                    <tr style="color: #00000091;">
-                                        <th>Item Code</th>
-                                        <th>Item Name</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="customerTable" style="background-color: #f0f0f0;">
-                                    <tr>
-                                        <td>IC001</td>
-                                        <td>Roses</td>
-                                        <td>500</td>
-                                        <td>40</td>
-                                        <td>20000</td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="container text-center" style="background-color: #fddeed">
+
+            <h4 class="text-center" style="font-size: 35px;">Total : 00.00RS/=</h4>
+            <div class="row">
+                <div class="col">
+                    <label for="item" class="form-label">Cash:</label>
+                    <input type="text" class="form-control" id="exampleInputitem">
+                </div>
+                <div class="col">
+                    <label for="itemCode" class="form-label">Discount:</label>
+                    <input type="text" class="form-control" id="exampleInputitemCode">
+                </div>
+                <div class="col">
+                    <label for="itemName" class="form-label">Balance:</label>
+                    <input type="text" class="form-control" id="exampleInputitemName">
+                </div>
+
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin-right: 100px;">
+            <button type="button" class="btn btn-warning">Clear</button>
+            <button type="button" class="btn btn-success">Renew Order</button>
+            <button type="button" class="btn btn-danger">Submit Order</button>
+        </div>
+
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+
+                <div class="customeTableDiv">
+                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                        <thead class="text-light text-center" style="background-color: #ffb6da; height: fit-content;">
+                            <tr style="color: #00000091;">
+                                <th>Item Code</th>
+                                <th>Item Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customerTable" style="background-color: #f0f0f0;">
+                            <tr>
+                                <td>IC001</td>
+                                <td>Roses</td>
+                                <td>500</td>
+                                <td>40</td>
+                                <td>20000</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
 
     </section>
 
@@ -522,7 +561,7 @@
             document.getElementById("odr-form").style.display = 'none';
 
         });
-            
+
 
         document.getElementById("CustomerForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'none';
