@@ -266,17 +266,17 @@
             <!-- buttons -->
             <div class="col-0 col-md-0 col-lg-10">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itemModal">
                     Add Item
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content" style="background-color: #f0f0f0;">
                             <div class="modal-header" style="background-color: #ffb6da;">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add New
+                                <h1 class="modal-title fs-5" id="itemModalLabel">Add New
                                     Item</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
@@ -285,24 +285,24 @@
                                 <form>
                                     <div class="mb-3">
                                         <label for="itemID" class="form-label">Item ID:</label>
-                                        <input type="text" class="form-control" id="exampleInputID">
+                                        <input type="text" class="form-control" id="txtItemID">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="itemName" class="form-label">Item name:</label>
-                                        <input type="text" class="form-control" id="exampleInputName:">
+                                        <label for="itemName" class="form-label">Item Name:</label>
+                                        <input type="text" class="form-control" id="txtItemName">
                                     </div>
                                     <div class="mb-3">
                                         <label for="itemPrice" class="form-label">Item Price:</label>
-                                        <input type="number" class="form-control" id="exampleInputAddress:">
+                                        <input type="text" class="form-control" id="txtItemPrice">
                                     </div>
                                     <div class="mb-3">
                                         <label for="itemQuantity" class="form-label">Item Quantity:</label>
-                                        <input type="number" class="form-control" id="exampleInputSalary:">
+                                        <input type="number" class="form-control" id="txtItemQuantity">
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger">Save</button>
+                                <button type="button" class="btn btn-danger" id="btnItem">Save</button>
                                 <button type="button" class="btn btn-warning">Renew</button>
                                 <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
                             </div>
@@ -310,22 +310,24 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
-            <div class="col-10">
+            <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+                <div class="col-10">
 
-                <div class="customeTableDiv">
-                    <table class="table bg-light table-bordered w-100 h-100 table-hover">
-                        <thead class="text-light text-center" style="background-color: #ffb6da; height: fit-content;">
-                            <tr style="color: #00000091;">
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                            </tr>
-                        </thead>
-                        <tbody id="customerTable" style="background-color: #f0f0f0;">
+                    <div class="customeTableDiv">
+                        <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                            <thead class="text-light text-center"
+                                style="background-color: #ffb6da; height: fit-content;">
+                                <tr style="color: #00000091;">
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tblItem"></tbody>
+
+                            <!-- <tbody id="customerTable" style="background-color: #f0f0f0;">
                             <tr>
                                 <td>I001</td>
                                 <td>Roses</td>
@@ -340,11 +342,11 @@
                                 <td>150000</td>
                             </tr>
 
-                        </tbody>
-                    </table>
+                        </tbody> -->
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
 
     </section>
@@ -614,6 +616,49 @@
             col2.textContent = name;
             col3.textContent = address;
             col4.textContent = salary;
+
+            //set 4 columns to the previously created row
+            tr.appendChild(col1);
+            tr.appendChild(col2);
+            tr.appendChild(col3);
+            tr.appendChild(col4);
+
+            //set the row to the table body
+            tBody.appendChild(tr);
+
+            //Work done;
+        });
+
+        //================== SAVE ITEM ===========================
+        //select the button and add a event to it
+        document.getElementById("btnItem").addEventListener("click", function () {
+
+            //get typed values of input fields
+            let id = document.getElementById("txtItemID").value;
+            let name = document.getElementById("txtItemName").value;
+            let price = document.getElementById("txtItemPrice").value;
+            let quantity = document.getElementById("txtItemQuantity").value;
+
+            //let's print it
+            console.log(id, name, price, quantity);
+
+            //catch the table body
+            let tBody = document.getElementById("tblItem");
+
+            //ok then, let's create the above row
+            let tr = document.createElement("tr");
+
+            //let's create another four columns
+            let col1 = document.createElement("td");
+            let col2 = document.createElement("td");
+            let col3 = document.createElement("td");
+            let col4 = document.createElement("td");
+
+            //set input fields values to the above created columns
+            col1.textContent = id;
+            col2.textContent = name;
+            col3.textContent = price;
+            col4.textContent = quantity;
 
             //set 4 columns to the previously created row
             tr.appendChild(col1);
