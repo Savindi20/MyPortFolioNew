@@ -171,24 +171,24 @@
                                 <form>
                                     <div class="mb-3">
                                         <label for="customerID" class="form-label">Customer ID:</label>
-                                        <input type="text" class="form-control" id="exampleInputID">
+                                        <input type="text" class="form-control" id="txtCustomerID">
                                     </div>
                                     <div class="mb-3">
                                         <label for="customerName" class="form-label">Customer Name:</label>
-                                        <input type="text" class="form-control" id="exampleInputName:">
+                                        <input type="text" class="form-control" id="txtCustomerName">
                                     </div>
                                     <div class="mb-3">
                                         <label for="customerAddress" class="form-label">Customer Address:</label>
-                                        <input type="text" class="form-control" id="exampleInputAddress:">
+                                        <input type="text" class="form-control" id="txtCustomerAddress">
                                     </div>
                                     <div class="mb-3">
                                         <label for="customerSalary" class="form-label">Customer Salary:</label>
-                                        <input type="number" class="form-control" id="exampleInputSalary:">
+                                        <input type="number" class="form-control" id="txtCustomerSalary">
                                     </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-danger">Save</button>
+                                <button type="button" class="btn btn-danger" id="btnCustomer">Save</button>
                                 <button type="button" class="btn btn-warning">Renew</button>
                                 <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
                             </div>
@@ -212,7 +212,8 @@
                                 <th>Salary</th>
                             </tr>
                         </thead>
-                        <tbody id="customerTable" style="background-color: #f0f0f0;">
+                        <tbody id="tblCustomer"></tbody>
+                        <!-- <tbody id="customerTable" style="background-color: #f0f0f0;">
                             <tr>
                                 <td>C001</td>
                                 <td>Savii</td>
@@ -227,7 +228,7 @@
                                 <td>100000</td>
                             </tr>
 
-                        </tbody>
+                        </tbody> -->
                     </table>
                 </div>
             </div>
@@ -348,7 +349,6 @@
 
     </section>
 
-
     <!-- =========================================================================================================== -->
 
     <!-- ====================  ORDER  ============================== -->
@@ -368,55 +368,60 @@
 
                     <div class="d-grid gap-2 d-md-flex">
                         <label for="orderID" class="form-label">Customer:</label>
-                        <input type="number" class="form-control" id="exampleInputID" style="width: 100px; height: 30px;">
-                          <!-- buttons -->
-            <div class="col-0 col-md-0 col-lg-10">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#customerchangeforme">
-                    Add Customer
-                </button>
+                        <input type="number" class="form-control" id="exampleInputID"
+                            style="width: 100px; height: 30px;">
+                        <!-- buttons -->
+                        <div class="col-0 col-md-0 col-lg-10">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                                data-bs-target="#customerchangeforme">
+                                Add Customer
+                            </button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="customerchangeforme" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content" style="background-color: #f0f0f0;">
-                            <div class="modal-header" style="background-color: #ffb6da;">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add New
-                                    Customer</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="customerchangeforme" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="background-color: #f0f0f0;">
+                                        <div class="modal-header" style="background-color: #ffb6da;">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add New
+                                                Customer</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="customerID" class="form-label">Customer ID:</label>
+                                                    <input type="text" class="form-control" id="exampleInputID">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="customerName" class="form-label">Customer Name:</label>
+                                                    <input type="text" class="form-control" id="exampleInputName:">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="customerAddress" class="form-label">Customer
+                                                        Address:</label>
+                                                    <input type="text" class="form-control" id="exampleInputAddress:">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="customerSalary" class="form-label">Customer
+                                                        Salary:</label>
+                                                    <input type="number" class="form-control" id="exampleInputSalary:">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger">Save</button>
+                                            <button type="button" class="btn btn-warning">Renew</button>
+                                            <button type="button" class="btn btn-info"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="customerID" class="form-label">Customer ID:</label>
-                                        <input type="text" class="form-control" id="exampleInputID">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="customerName" class="form-label">Customer Name:</label>
-                                        <input type="text" class="form-control" id="exampleInputName:">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="customerAddress" class="form-label">Customer Address:</label>
-                                        <input type="text" class="form-control" id="exampleInputAddress:">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="customerSalary" class="form-label">Customer Salary:</label>
-                                        <input type="number" class="form-control" id="exampleInputSalary:">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger">Save</button>
-                                <button type="button" class="btn btn-warning">Renew</button>
-                                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
-                            </div>
+
                         </div>
-                    </div>
-                </div>
-
-            </div>
                     </div>
 
                     <label for="customerID" class="form-label">Address:</label>
@@ -467,7 +472,7 @@
 
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <button type="button" class="btn btn-danger">Place Order</button>
-                                  </div>
+                                </div>
                             </div>
                         </div>
 
@@ -544,10 +549,10 @@
 
     </section>
 
-
-
-
     <script>
+
+        //================== NAVIGATION ===========================
+
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("hme-form").style.display = 'inline-block';
             document.getElementById("cus-form").style.display = 'none';
@@ -559,30 +564,67 @@
             document.getElementById("cus-form").style.display = 'none';
             document.getElementById("itm-form").style.display = 'none';
             document.getElementById("odr-form").style.display = 'none';
-
         });
-
-
         document.getElementById("CustomerForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'none';
             document.getElementById("cus-form").style.display = 'inline-block';
             document.getElementById("itm-form").style.display = 'none';
             document.getElementById("odr-form").style.display = 'none';
-
         });
         document.getElementById("ItemForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'none';
             document.getElementById("cus-form").style.display = 'none';
             document.getElementById("itm-form").style.display = 'inline-block';
             document.getElementById("odr-form").style.display = 'none';
-
         });
         document.getElementById("OrderForm").addEventListener("click", function () {
             document.getElementById("hme-form").style.display = 'none';
             document.getElementById("cus-form").style.display = 'none';
             document.getElementById("itm-form").style.display = 'none';
             document.getElementById("odr-form").style.display = 'inline-block';
+        });
 
+        //================== SAVE CUSTOMER ===========================
+        //select the button and add a event to it
+        document.getElementById("btnCustomer").addEventListener("click", function () {
+
+            //get typed values of input fields
+            let id = document.getElementById("txtCustomerID").value;
+            let name = document.getElementById("txtCustomerName").value;
+            let address = document.getElementById("txtCustomerAddress").value;
+            let salary = document.getElementById("txtCustomerSalary").value;
+
+            //let's print it
+            console.log(id, name, address, salary);
+
+            //catch the table body
+            let tBody = document.getElementById("tblCustomer");
+
+            //ok then, let's create the above row
+            let tr = document.createElement("tr");
+
+            //let's create another four columns
+            let col1 = document.createElement("td");
+            let col2 = document.createElement("td");
+            let col3 = document.createElement("td");
+            let col4 = document.createElement("td");
+
+            //set input fields values to the above created columns
+            col1.textContent = id;
+            col2.textContent = name;
+            col3.textContent = address;
+            col4.textContent = salary;
+
+            //set 4 columns to the previously created row
+            tr.appendChild(col1);
+            tr.appendChild(col2);
+            tr.appendChild(col3);
+            tr.appendChild(col4);
+
+            //set the row to the table body
+            tBody.appendChild(tr);
+
+            //Work done;
         });
     </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
