@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Document</title>
     <style>
-        body{
+        body {
             background-color: #000000;
         }
-        section{
+
+        section {
             position: absolute;
             left: 0;
             right: 0;
@@ -18,71 +20,92 @@
             bottom: 0;
             margin: auto;
             width: 1000px;
-            height: 200px;
-            display: grid;
-            grid-gap: 5px;
-            grid-template-rows: repeat(6, 1fr);
-            grid-template-columns: repeat(8, 1fr);
+            height: 70px;
+            display: flex;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding: 10px;
+
         }
 
-        section div{
-            height: calc(200px/3);
+        section div {
+            height: 100%;
             width: 200px;
-            grid-row: 3;
         }
 
-        #whiteLine01{
-            height: 2px;
-            width: 1025px;
-            grid-row: 2;
-            grid-column:1/9;
-            background-color:white;
-
+        button {
+            width: 120px;
+            position: relative;
+            margin-left: 20px;
+            top: 24rem;
+            left: 32rem;
         }
-
-        #whiteLine02{
-            height: 2px;
-            width: 1025px;
-            grid-row: 5;
-            grid-column: 1/9;
-            background-color:white;
-
-        }
-
-        button{
-            grid-row: 6; 
-        }
-
     </style>
 
 </head>
+
 <body>
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div id="whiteLine01"></div>
-    <div id="whiteLine02"></div>
-    <button type="button" class="btn btn-primary">Start</button>
-    <button type="button" class="btn btn-danger">Stop</button>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <button type="button" class="btn btn-primary" id="start-btn">Start</button>
+    <button type="button" class="btn btn-danger" id="stop-btn">Stop</button>
 
-</section>
-<script>
-    let color=["white","#ffbaba","#ff5252","#ff0000","#a70000"];
-    let divArray= document.querySelector("section").children;
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        let colors = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", '#FFBABA', "#FF5252", "#FF0000", "#A70000"];
+        let colors2 = ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", '#A70000', "#FF0000", "#FF5252", "#FFBABA"];
+        let section = document.querySelector("section");
+        let divArray = section.getElementsByTagName("div");
+        let count = 0;
+        let reverse = true;
+        let interval;
+        $(document).ready(function () {
+            clearInterval(interval);
+            Rider();
+            $("#start.btn").click(function () {
+                clearInterval(interval);
+                Rider();
+            });
 
-    setInterval(function(){
+        });
 
-        for (let i=0;i< divArray.length;i++){
-            divArray[i].style.background=color[i];
+        function Rider() {
+            interval = setInterval(function () {
+                if (reverse) {
+                    for (let i = 0; i < divArray.length; i++) {
+                        divArray[i].style.backgroundColor = colors[i];
+                    }
+                    let lastValue = colors.pop();
+                    colors.unshift(lastValue);
+                    count++;
+                    if (count == 12) {
+                        reverse = false;
+                    }
+                } if (reverse == false) {
+                    let lastColor = colors2.shift();
+                    colors2.push(lastColor);
+                    for (let i = 0; i < divArray.length; i++) {
+                        divArray[i].style.backgroundColor = colors2[i];
+                    }
+                    count--;
+                    if (count == 1) {
+                        reverse = true;
+                    }
+                }
+            }, 50);
         }
-        let lastElement = color.pop();
-        color.unshift(lastElement);
-
-    },500);
-
-</script>
+        document.querySelector("#stop-btn").addEventListener('click', function () {
+            clearInterval(interval);
+        });
+        document.querySelector("#start-btn").addEventListener('click', function () {
+            Rider();
+        });
+    </script>
 </body>
+
 </html>
