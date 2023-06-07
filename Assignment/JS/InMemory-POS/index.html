@@ -155,6 +155,7 @@
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Add Customer
                 </button>
+                <button type="button" class="btn btn-primary" id="getallcustomer">GetAll Customer</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -269,6 +270,7 @@
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#itemModal">
                     Add Item
                 </button>
+                <button type="button" class="btn btn-primary" id="getallItem">GetAll Item</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="itemModalLabel"
@@ -590,7 +592,9 @@
 
         //================== SAVE CUSTOMER ===========================
         //select the button and add a event to it
+        let array = [];
         $('#btnCustomer').click(function () {
+
             let id = $('#txtCustomerID').val();
             let name = $('#txtCustomerName').val();
             let address = $('#txtCustomerAddress').val();
@@ -598,24 +602,33 @@
 
             let tbody = $('#tblCustomer');
 
-            let tr = $('<tr>');
-
-            let col1 = $('<td>');
-            let col2 = $('<td>');
-            let col3 = $('<td>');
-            let col4 = $('<td>');
-            
-            col1.text(id);
-            col2.text(name);
-            col3.text(address);
-            col4.text(salary);
-
-            tr.append(col1);
-            tr.append(col2);
-            tr.append(col3);
-            tr.append(col4);
-
+            let tr = $('<tr> <td>'+id+'</td><td>'+name+'</td><td>'+address+'</td><td>'+salary+'</td> </tr>')
             tbody.append(tr);
+
+            array.push({id:id,name:name,address:address,salary:salary});
+            console.log(array);
+            
+
+            // let tbody = $('#tblCustomer');
+
+            // let tr = $('<tr>');
+
+            // let col1 = $('<td>');
+            // let col2 = $('<td>');
+            // let col3 = $('<td>');
+            // let col4 = $('<td>');
+            
+            // col1.text(id);
+            // col2.text(name);
+            // col3.text(address);
+            // col4.text(salary);
+
+            // tr.append(col1);
+            // tr.append(col2);
+            // tr.append(col3);
+            // tr.append(col4);
+
+            // tbody.append(tr);
         });
         // document.getElementById("btnCustomer").addEventListener("click", function () {
 
@@ -661,32 +674,42 @@
         //================== SAVE ITEM ===========================
         //select the button and add a event to it
 
+        let itemarray = [];
         $('#btnItem').click(function () {
+
             let id = $('#txtItemID').val();
             let name = $('#txtItemName').val();
             let price = $('#txtItemPrice').val();
             let quantity = $('#txtItemQuantity').val();
-
+            
             let tbody = $('#tblItem');
 
-            let tr = $('<tr>');
-
-            let col1 = $('<td>');
-            let col2 = $('<td>');
-            let col3 = $('<td>');
-            let col4 = $('<td>');
-            
-            col1.text(id);
-            col2.text(name);
-            col3.text(price);
-            col4.text(quantity);
-
-            tr.append(col1);
-            tr.append(col2);
-            tr.append(col3);
-            tr.append(col4);
-
+            let tr = $('<tr> <td>'+id+'</td><td>'+name+'</td><td>'+price+'</td><td>'+quantity+'</td> </tr>')
             tbody.append(tr);
+
+            array.push({id:id,name:name,price:price,quantity:quantity});
+            console.log(itemarray);
+
+            // let tbody = $('#tblItem');
+
+            // let tr = $('<tr>');
+
+            // let col1 = $('<td>');
+            // let col2 = $('<td>');
+            // let col3 = $('<td>');
+            // let col4 = $('<td>');
+            
+            // col1.text(id);
+            // col2.text(name);
+            // col3.text(price);
+            // col4.text(quantity);
+
+            // tr.append(col1);
+            // tr.append(col2);
+            // tr.append(col3);
+            // tr.append(col4);
+
+            // tbody.append(tr);
         });
 
         // document.getElementById("btnItem").addEventListener("click", function () {
