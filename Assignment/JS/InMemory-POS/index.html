@@ -372,17 +372,16 @@
 
                     <div class="d-grid gap-2 d-md-flex">
                         <label for="orderID" class="form-label">Customer:</label>
-                        <input type="number" class="form-control" id="exampleInputID"
-                            style="width: 100px; height: 30px;">
-                        <!-- buttons -->
-                        <div class="col-0 col-md-0 col-lg-10">
-                            <!-- Button trigger modal -->
+                        <select aria-label="Default select example" class="form-select" id="cId"></select>
+
+                        <!-- <div class="col-0 col-md-0 col-lg-10">
+                            
                             <button type="button" class="btn btn-info" data-bs-toggle="modal"
                                 data-bs-target="#customerchangeforme">
                                 Add Customer
                             </button>
 
-                            <!-- Modal -->
+                            
                             <div class="modal fade" id="customerchangeforme" tabindex="-1"
                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -425,7 +424,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div> -->
                     </div>
 
                     <label for="customerID" class="form-label">Address:</label>
@@ -446,18 +445,18 @@
 
                         <div class="d-grid gap-2 d-md-flex">
                             <label for="orderID" class="form-label">Item:</label>
-                            <input type="number" class="form-control" id="exampleInputID" style="height: 25px;">
+                            <select aria-label="Default select example" class="form-select" id="IId"></select>
                         </div>
 
                         <div class="container text-center">
                             <div class="row">
                                 <div class="col-md-auto">
                                     <label for="Price" class="form-label">Price:</label>
-                                    <input type="number" class="form-control" id="exampleInputitemPrice">
+                                    <input type="text" class="form-control" id="exampleInputitemPrice">
                                 </div>
                                 <div class="col col-lg-2">
                                     <label for="qtyonh" class="form-label">QTYOnH:</label>
-                                    <input type="number" class="form-control" id="exampleInputitemQTY">
+                                    <input type="text" class="form-control" id="exampleInputitemQTY">
                                 </div>
                             </div>
                         </div>
@@ -592,7 +591,7 @@
 
         //================== SAVE CUSTOMER ===========================
         //select the button and add a event to it
-        let array = [];
+        let customerDB = [];
         $('#btnCustomer').click(function () {
 
             let id = $('#txtCustomerID').val();
@@ -602,12 +601,20 @@
 
             let tbody = $('#tblCustomer');
 
-            let tr = $('<tr> <td>'+id+'</td><td>'+name+'</td><td>'+address+'</td><td>'+salary+'</td> </tr>')
+            let tr = $('<tr> <td>' + id + '</td><td>' + name + '</td><td>' + address + '</td><td>' + salary + '</td> </tr>')
             tbody.append(tr);
 
-            array.push({id:id,name:name,address:address,salary:salary});
-            console.log(array);
-            
+            // array.push({id:id,name:name,address:address,salary:salary});
+            // console.log(array);
+
+            let cusObj = {
+                id: id,
+                name: name,
+                address: address,
+                salary: salary
+            }
+            customerDB.push(cusObj);
+
 
             // let tbody = $('#tblCustomer');
 
@@ -617,7 +624,7 @@
             // let col2 = $('<td>');
             // let col3 = $('<td>');
             // let col4 = $('<td>');
-            
+
             // col1.text(id);
             // col2.text(name);
             // col3.text(address);
@@ -630,6 +637,7 @@
 
             // tbody.append(tr);
         });
+
         // document.getElementById("btnCustomer").addEventListener("click", function () {
 
         //     //get typed values of input fields
@@ -681,14 +689,22 @@
             let name = $('#txtItemName').val();
             let price = $('#txtItemPrice').val();
             let quantity = $('#txtItemQuantity').val();
-            
+
             let tbody = $('#tblItem');
 
-            let tr = $('<tr> <td>'+id+'</td><td>'+name+'</td><td>'+price+'</td><td>'+quantity+'</td> </tr>')
+            let tr = $('<tr> <td>' + id + '</td><td>' + name + '</td><td>' + price + '</td><td>' + quantity + '</td> </tr>')
             tbody.append(tr);
 
-            array.push({id:id,name:name,price:price,quantity:quantity});
-            console.log(itemarray);
+            let itemobject = {
+                id: id,
+                name: name,
+                price: price,
+                quantity: quantity
+            }
+            itemarray.push(itemobject);
+
+            // array.push({id:id,name:name,price:price,quantity:quantity});
+            // console.log(itemarray);
 
             // let tbody = $('#tblItem');
 
@@ -698,7 +714,7 @@
             // let col2 = $('<td>');
             // let col3 = $('<td>');
             // let col4 = $('<td>');
-            
+
             // col1.text(id);
             // col2.text(name);
             // col3.text(price);
@@ -752,6 +768,28 @@
 
         //     //Work done;
         // });
+
+        //===================== ORDER FORM JS ===============================
+
+
+        $('#cId').click(function () {
+
+            $('#cId').empty();
+            for (const customerC of customerDB) {
+                $('#cId').append(`<option>${customerC.name}</option>`);
+            }
+
+        });
+
+
+        $('#IId').click(function () {
+
+            $('#IId').empty();
+            for (const itemC of itemarray) {
+                $('#IId').append(`<option>${itemC.name}</option>`);
+            }
+
+        });
 
     </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
