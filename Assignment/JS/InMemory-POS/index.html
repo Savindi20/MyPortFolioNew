@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="posStyle.css">
+    <link rel="stylesheet" href="css/posStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Flower Store</title>
     <!-- <meta http-equiv="refresh" content="3; ">> -->
     <link rel="icon" href="assest/store.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
     </style>
@@ -75,33 +76,6 @@
                 </div>
                 <div class="carousel-item">
                     <img src="assest/home1.jpeg" class="d-block w-100" alt="..." style="opacity: 0.9;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>For Your Flower Needs</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assest/home2.jpeg" class="d-block w-100" alt="..." style="opacity: 0.9;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>For Your Flower Needs</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assest/home3.png" class="d-block w-100" alt="..." style="opacity: 0.9;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>For Your Flower Needs</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="assest/home4.png" class="d-block w-100" alt="..." style="opacity: 0.9;">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>For Your Flower Needs</h5>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
@@ -552,7 +526,7 @@
 
     </section>
 
-    <script src="jquery-3.7.0.min.js"></script>
+    <script src="assest/jquery-3.7.0.min.js"></script>
 
     <script>
 
@@ -614,69 +588,8 @@
                 salary: salary
             }
             customerDB.push(cusObj);
-
-            // let tbody = $('#tblCustomer');
-
-            // let tr = $('<tr>');
-
-            // let col1 = $('<td>');
-            // let col2 = $('<td>');
-            // let col3 = $('<td>');
-            // let col4 = $('<td>');
-
-            // col1.text(id);
-            // col2.text(name);
-            // col3.text(address);
-            // col4.text(salary);
-
-            // tr.append(col1);
-            // tr.append(col2);
-            // tr.append(col3);
-            // tr.append(col4);
-
-            // tbody.append(tr);
         });
 
-        // document.getElementById("btnCustomer").addEventListener("click", function () {
-
-        //     //get typed values of input fields
-        //     let id = document.getElementById("txtCustomerID").value;
-        //     let name = document.getElementById("txtCustomerName").value;
-        //     let address = document.getElementById("txtCustomerAddress").value;
-        //     let salary = document.getElementById("txtCustomerSalary").value;
-
-        //     //let's print it
-        //     console.log(id, name, address, salary);
-
-        //     //catch the table body
-        //     let tBody = document.getElementById("tblCustomer");
-
-        //     //ok then, let's create the above row
-        //     let tr = document.createElement("tr");
-
-        //     //let's create another four columns
-        //     let col1 = document.createElement("td");
-        //     let col2 = document.createElement("td");
-        //     let col3 = document.createElement("td");
-        //     let col4 = document.createElement("td");
-
-        //     //set input fields values to the above created columns
-        //     col1.textContent = id;
-        //     col2.textContent = name;
-        //     col3.textContent = address;
-        //     col4.textContent = salary;
-
-        //     //set 4 columns to the previously created row
-        //     tr.appendChild(col1);
-        //     tr.appendChild(col2);
-        //     tr.appendChild(col3);
-        //     tr.appendChild(col4);
-
-        //     //set the row to the table body
-        //     tBody.appendChild(tr);
-
-        //     //Work done;
-        // });
 
         //================== SAVE ITEM ===========================
         //select the button and add a event to it
@@ -727,46 +640,6 @@
             // tbody.append(tr);
         });
 
-        // document.getElementById("btnItem").addEventListener("click", function () {
-
-        //     //get typed values of input fields
-        //     let id = document.getElementById("txtItemID").value;
-        //     let name = document.getElementById("txtItemName").value;
-        //     let price = document.getElementById("txtItemPrice").value;
-        //     let quantity = document.getElementById("txtItemQuantity").value;
-
-        //     //let's print it
-        //     console.log(id, name, price, quantity);
-
-        //     //catch the table body
-        //     let tBody = document.getElementById("tblItem");
-
-        //     //ok then, let's create the above row
-        //     let tr = document.createElement("tr");
-
-        //     //let's create another four columns
-        //     let col1 = document.createElement("td");
-        //     let col2 = document.createElement("td");
-        //     let col3 = document.createElement("td");
-        //     let col4 = document.createElement("td");
-
-        //     //set input fields values to the above created columns
-        //     col1.textContent = id;
-        //     col2.textContent = name;
-        //     col3.textContent = price;
-        //     col4.textContent = quantity;
-
-        //     //set 4 columns to the previously created row
-        //     tr.appendChild(col1);
-        //     tr.appendChild(col2);
-        //     tr.appendChild(col3);
-        //     tr.appendChild(col4);
-
-        //     //set the row to the table body
-        //     tBody.appendChild(tr);
-
-        //     //Work done;
-        // });
 
         //===================== ORDER FORM JS ===============================
 
@@ -792,6 +665,22 @@
 
     </script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="model/customer.js"></script>
+    <script src="model/item.js"></script>
+    <script src="model/order.js"></script>
+
+    <script src="db/DB.js"></script>
+
+    <script src="util/Validations.js"></script>
+
+    <script src="controller/customerControler.js"></script>
+    <script src="controller/itemController.js"></script>
+    <script src="controller/orderController.js"></script>
+    <script src="controller/orderDetailController.js"></script>
+
+
+    <script src="util/Alerts.js"></script>
 </body>
 
 </html>
