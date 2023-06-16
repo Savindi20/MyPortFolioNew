@@ -142,7 +142,6 @@
                     <div class="mb-3 ms-3 me-3">
                         <input class="form-control" id="custId" placeholder="Input Customer ID" type="text">
                     </div>
-                    <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Search</button>
                     <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="button">Delete</button>
                     <button class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
 
@@ -168,7 +167,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body" id="CustomerModalbody">
                                 <form>
                                     <div class="mb-3">
                                         <label for="customerID" class="form-label">Customer ID:</label>
@@ -190,6 +189,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" id="btnCustomer">Save</button>
+                                <button class="btn btn-primary" type="submit" id="btnCustomerSearch">Search</button>
                                 <button type="button" class="btn btn-warning">Renew</button>
                                 <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
                             </div>
@@ -257,7 +257,6 @@
                     <div class="mb-3 ms-3 me-3">
                         <input class="form-control" id="itenid" placeholder="Input Item ID" type="text">
                     </div>
-                    <button class="btn btn-primary ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Search</button>
                     <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="button">Delete</button>
                     <button class="btn btn-warning ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
 
@@ -305,6 +304,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" id="btnItem">Save</button>
+                                <button class="btn btn-primary" type="submit" id="SearchCustomer">Search</button>
                                 <button type="button" class="btn btn-warning">Renew</button>
                                 <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
                             </div>
@@ -614,7 +614,6 @@
                 salary: salary
             }
             customerDB.push(cusObj);
-
 
             // let tbody = $('#tblCustomer');
 
