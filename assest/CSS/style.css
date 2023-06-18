@@ -547,7 +547,6 @@ input{
     width: 100%;
     vertical-align: middle;
     transition: all 1s var(--transition);
-    border: 5px solid var(--border-color);
     border-radius: var(--radius);
     height: 200px;
     width: 400px;
@@ -572,17 +571,11 @@ input{
 }
 
 .assignment__item:hover .assignment__img{
-    border: 5px solid var(--first-color);
-    transform: scale(0.9);
-    opacity: 0.65;
-}
-
-.assignment__item:hover{
-    display: block;
-}
-
-.assignment__item:hover .assignment__data{
-    transform: translateY(2rem);
+    transition: all 0.8s ease;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    box-shadow: 1px 1px 54px 1px rgba(160, 160, 160, 0.22);
+    cursor: pointer;
 }
 
 /* ================ CONTACT ====================== */
