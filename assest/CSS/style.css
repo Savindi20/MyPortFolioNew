@@ -241,6 +241,10 @@ input{
     font-weight: var(--wight-500);
 }
 
+.nav__social-link{
+    padding-top: 10px;
+}
+
 .nav__socials{
     column-gap: 1rem;
     margin-left: auto;
@@ -251,7 +255,6 @@ input{
     transition: all 0.8s ease;
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
-    box-shadow: 1px 1px 54px 1px rgba(160, 160, 160, 0.22);
     cursor: pointer;
 }
 
@@ -838,6 +841,7 @@ input{
     }
 
     .nav__toggle {
+        padding-top: 10px;
         font-size: 1.125rem;  
         cursor: pointer;
     }
