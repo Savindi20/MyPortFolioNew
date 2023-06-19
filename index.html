@@ -111,8 +111,8 @@
                     <span class="home__subtitle">Welcome to My Portfolio</span>
                     <h1 class="home__title">
                         I'm Savindi Dadallage
-                        <span> Junior&nbsp;Developer.</span>
-                        based in Sri Lanka.
+                        <br>
+                        <span class="typing"></span>
                     </h1>
                 </div>
 
@@ -597,7 +597,7 @@
             </div>
         </section>
 
-       
+
 
     </main>
 
@@ -631,7 +631,7 @@
             <p class="footer__copyright"> &copy; 2023. All rights reserved.</p>
         </div>
     </fotter>
-    
+
 
     <!-- ====================  SCROLL UP  ============================== -->
     <a href="#" class="scrollup" id="scroll-up">
@@ -644,16 +644,25 @@
     <!-- ====================  MAIN JS ============================== -->
     <script src="assest/JS/main.js"></script>
 
-    <!-- ====================  LORDER ============================== -->
+    <!-- ====================  LORDER & TYPER ============================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="assest/JS/jquery-3.7.0.min.js"></script>
     <script>
         let loader = document.getElementById("loader");
         //this is it. this will execute after the window is fully loaded
         window.addEventListener("load", function () {
             console.log("This message will print just after fully loading the website")
-    
+
             //hide the loader
             loader.style.display = 'none';
         });
+
+        let typed = new Typed(".typing", {
+        strings: ["", "Web Developer", "Mobile Developer", "UI/UX Engineer"],
+        typeSpeed: 150,
+        backSpeed: 100,
+        loop: true
+    })
     </script>
 </body>
 
