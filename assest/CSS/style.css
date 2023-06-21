@@ -277,6 +277,7 @@ input{
 }
 
 /* Active link */
+#nav_icon,
 .active__link,
 .nav__link:hover{
     color: var(--first-color);
@@ -429,7 +430,11 @@ input{
 }
 
 .services__item:hover{
-    border: 1px solid var(--first-color);
+    transition: all 0.8s ease;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    box-shadow: 1px 1px 54px 1px rgba(196, 196, 196, 0.22);
+    cursor: pointer;
 }
 
 .services__icon{
