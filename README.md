@@ -10,7 +10,7 @@
 
 <div align="left">
 
-  #### ʟᴀɴɢᴜᴀɢᴇꜱ - ʜᴛᴍʟ, ᴄꜱꜱ, ᴊᴀᴠᴀ ꜱᴄʀɪᴘᴛ
+   #### LANGUAGES - HTML, CSS, JAVA SCRIPT
   <div>
     
 #
@@ -25,10 +25,22 @@
 
 <div align="left">
 
-#### ʟᴀɴɢᴜᴀɢᴇꜱ - ʜᴛᴍʟ, ᴄꜱꜱ, ᴊᴀᴠᴀ ꜱᴄʀɪᴘᴛ
+#### LANGUAGES - HTML, CSS, JAVA SCRIPT
 
-#### ʟɪʙʀᴀʀɪᴇꜱ - ᴊQᴜᴇʀʏ, ꜱᴡᴇᴇᴛᴀʟᴇʀᴛ
+#### LIBRARIES - JQUERY, SWEETALERT
 
-#### ꜰʀᴀᴍᴇᴡᴏʀᴋꜱ - ʙᴏᴏᴛꜱᴛʀᴀᴘ 5.3
+#### FREAMWORKS - BOOTSTRAP 5.3
 
 </div>
+
+#
+
+<div>
+  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/PortfolioReadME.png" alt="">
+<div>
+
+#
+
+<div>
+  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/PosReadME.jpg" alt="">
+<div>
