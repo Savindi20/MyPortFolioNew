@@ -42,9 +42,9 @@
 #
 
 <div>
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
+  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/pos1.PNG" alt="">
+  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/pos2.PNG" alt="">
+  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/pos3.PNG" alt="">
+  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/pos4.PNG" alt="">
+  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/pos5.PNG" alt="">
 <div>
