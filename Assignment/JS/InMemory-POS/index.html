@@ -29,11 +29,11 @@
     <main class="d-flex row align-items-center justify-content-center overflow-hidden">
 
         <section
-            class="d-flex full-height flex-column h-75 col-md-12 bg-white shadow-lg rounded-5 align-items-center justify-content-between">
+            class="d-flex full-height flex-column h-75 col-md-12 bg-transparent shadow-lg rounded-5 align-items-center justify-content-between">
 
             <!-- Nav bar -->
             <div>
-                <nav class="navbar navbar-expand-lg bg-transparent border-bottom sticky-top">
+                <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top" style="border-radius: 10px;">
                     <div class="container-fluid">
                         <a class="navbar-brand" style="font-weight: 700; font-size: 25px; color: rgb(165, 42, 114);">
                             <img src="assest/img/icon1.png" alt=""
@@ -41,26 +41,22 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li id="btnDashboard" class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-house-fill"></i>
+                                    <a class="nav-link" aria-current="page" href="#"></i>
                                         Dashboard</a>
                                 </li>
                                 <li id="btnCustomer" class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-people-fill"></i>
+                                    <a class="nav-link" aria-current="page" href="#"></i>
                                         Customers</a>
                                 </li>
                                 <li id="btnItems" class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-handbag-fill"></i>
+                                    <a class="nav-link" aria-current="page" href="#"></i>
                                         Items</a>
                                 </li>
                                 <li id="btnOrders" class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"><i
-                                            class="bi bi-cart-check-fill"></i>
-                                        Purchase Orders</a>
+                                    <a class="nav-link" aria-current="page" href="#">Purchase Orders</a>
                                 </li>
                                 <li id="btnOrderDetails" class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#"><i
-                                            class="bi bi-cloud-arrow-down-fill"></i>
-                                        Order Details</a>
+                                    <a class="nav-link" aria-current="page" href="#">Order Details</a>
                                 </li>
 
                             </ul>
@@ -308,50 +304,49 @@
                 <div class="w-100">
                     <form class="row g-0">
                         <div class="col-md-3">
-                            <label for="cmbCustomerId" class="form-label">Customer ID</label>
+                            <label for="cmbCustomerId" class="form-label"></label>
                             <select id="cmbCustomerId" class="form-select">
 
                             </select>
                         </div>
                         <div class="col-md-3">
-                            <label for="cusName" class="form-label">Name</label>
+                            <label for="cusName" class="form-label"></label>
                             <input type="text" class="form-control" id="cusName" placeholder="Customer Name">
                         </div>
                         <div class="col-md-3">
-                            <label for="cusAddress" class="form-label">Address</label>
+                            <label for="cusAddress" class="form-label"></label>
                             <input type="text" class="form-control" id="cusAddress" placeholder="Address">
                         </div>
                         <div class="col-md-3">
-                            <label for="cusSalary" class="form-label">Salary</label>
+                            <label for="cusSalary" class="form-label"></label>
                             <input type="text" class="form-control" id="cusSalary" placeholder="Salary">
                         </div>
                         <div class="col-md-3">
-                            <label for="cmbItemCode" class="form-label">Item Code</label>
+                            <label for="cmbItemCode" class="form-label"></label>
                             <select id="cmbItemCode" class="form-select">
 
                             </select>
                         </div>
                         <div class="col-md-2">
-                            <label for="item_name" class="form-label">Item Name</label>
+                            <label for="item_name" class="form-label"></label>
                             <input type="text" class="form-control" id="item_name" placeholder="Name">
                         </div>
                         <div class="col-md-2">
-                            <label for="qty_OnHand" class="form-label">QTY On Hand</label>
+                            <label for="qty_OnHand" class="form-label"></label>
                             <input type="number" class="form-control" id="qty_OnHand" placeholder="Qty On Hand">
                         </div>
                         <div class="col-md-2">
-                            <label for="unitPrice" class="form-label">Price</label>
+                            <label for="unitPrice" class="form-label"></label>
                             <input type="number" class="form-control" id="unitPrice" placeholder="Price">
                         </div>
                         <div class="col-md-2">
-                            <label for="txtQty" class="form-label">Quantity</label>
+                            <label for="txtQty" class="form-label"></label>
                             <input type="number" class="form-control" id="txtQty" placeholder="Quantity">
                         </div>
                         <div class="d-flex col-12 justify-content-end">
                             <div class="col-lg-2 d-flex flex-column justify-content-end">
                                 <button type="button" class="btn btn-outline-light mb-3" id="btnAddToCart"
-                                style="color: rgb(255, 255, 255); background-color: rgb(197, 28, 146);">Add To Cart <i
-                                        class="bi bi-cart-plus-fill"></i></button>
+                                style="color: rgb(255, 255, 255); background-color: rgb(197, 28, 146);opacity: 1;">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -385,9 +380,9 @@
 
                     <!-- Place Order Button -->
                     <div>
-                        <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal"
-                            data-bs-target="#modelPlaceOrder" id="btnPlaceOrder">
-                            Place Order <i class="bi bi-shop"></i>
+                        <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal"
+                            data-bs-target="#modelPlaceOrder" id="btnPlaceOrder" style="opacity: 1;">
+                            Place Order
                         </button>
                     </div>
 
@@ -430,9 +425,7 @@
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-success" id="btnPurchaseOrder">Purchase <i
-                                            class="bi bi-upc-scan"></i>
-                                    </button>
+                                    <button type="button" class="btn btn-success" id="btnPurchaseOrder">Purchase</button>
                                 </div>
                             </div>
                         </div>

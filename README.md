@@ -42,5 +42,9 @@
 #
 
 <div>
-  <img src="https://github.com/Savindi20/MyPortFolioNew/blob/main/ReadmeIMG/PosReadME.jpg" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
 <div>
